@@ -129,60 +129,12 @@ img {
   color: var(--text-black);
 }
 
-.text-11 {
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  font-family: var(--font-family-inria-sans);
-  font-weight: normal;
-  font-size: 40px;
-  text-decoration: none;
-  text-transform: none;
-  color: var(--text-black);
-}
-
-.text-12 {
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  font-family: var(--font-family-inria-sans);
-  font-weight: normal;
-  font-size: 40px;
-  text-decoration: none;
-  text-transform: none;
-  color: var(--text-black);
-}
-
-.node-13 {
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  border: 1px solid rgba(0, 0, 0, 1);
-  height: auto;
-}
-
-.node-14 {
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  border: 1px solid rgba(0, 0, 0, 1);
-  height: auto;
-}
-
-.node-15 {
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.5);
-  border: 1px solid rgba(0, 0, 0, 1);
-  height: auto;
-}
 
 
-@media (max-width: 1440px) {
+@media (max-width: 1480px) {
   .desktop-1-1 {
-    padding-left: 24px;
-    padding-right: 24px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
 
@@ -209,7 +161,7 @@ img {
 }
 
 .image-row img {
-  flex: 1 1 300px; /* allows images to grow/shrink with a base of 300px */
+  flex: 1 1 295px; /* allows images to grow/shrink with a base of 300px */
   max-width: 100%;
   height: auto;
   border: 1px solid rgba(0, 0, 0, 1);
