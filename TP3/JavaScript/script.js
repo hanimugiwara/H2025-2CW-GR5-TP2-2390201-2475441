@@ -1,23 +1,19 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // --- Début du premier bloc de code (Gestion des produits ORDS) ---
-    // Définir l'URL complète vers la ressource ORDS pour les produits
-    const API_URL = "http://localhost:8080/ords/commande/produit/"; // adapte l’URL selon ton service ORDS
 
     // Sélection des éléments du DOM
     const produitList = document.getElementById("produitList");
-    const loadingMessage = document.getElementById("loadingMessage");
     const errorMessage = document.getElementById("errorMessage");
 
     // Afficher le message de chargement
-    loadingMessage.style.display = "block";
+
 
     // Appel de l’API avec fetch
-    fetch(API_URL)
+    fetch("http://localhost:8080/ords/commande/produit/")
         .then(function (response) {
-            response.json();
+            return response.json();
         })
         .then(function (data) {
-            loadingMessage.style.display = "none";
+            
 
             if (data && data.items && Array.isArray(data.items)) {
                 if (data.items.length === 0) {
@@ -32,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         })
         .catch(function (error) {
-            loadingMessage.style.display = "none";
+ 
             errorMessage.textContent = "Erreur lors du chargement des produits.";
             errorMessage.style.display = "block";
             console.error("Erreur:" + error);
