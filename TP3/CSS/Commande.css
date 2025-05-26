@@ -163,3 +163,119 @@ img {
   text-align: center;
   padding-top: 20px;
 }
+
+/* General body styling */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f3f4f6; /* Light gray background */
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Container for the product list */
+.container {
+    width: 100%;
+    max-width: 1200px; /* Max width for larger screens */
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 2.5rem; /* Larger heading */
+    font-weight: 700;
+    color: #1f2937; /* Dark gray text */
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Product list grid layout */
+#produitList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive grid columns */
+    gap: 24px; /* Space between cards */
+    justify-content: center;
+    align-items: stretch; /* Ensure cards have equal height */
+}
+
+/* Styling for individual product cards */
+.produit-card {
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb; /* Light border */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Push details to bottom if needed */
+}
+
+.produit-card:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.produit-card h2 {
+    font-size: 1.5rem; /* Product title size */
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 15px;
+    text-align: center;
+    word-break: break-word; /* Prevent long words from overflowing */
+}
+
+/* Styling for product details section */
+.produit-details {
+    margin-top: 10px;
+    font-size: 0.95rem;
+    color: #4b5563; /* Medium gray text */
+}
+
+/* Styling for each detail row */
+.detail-row {
+    display: flex;
+    justify-content: space-between; /* Align label and value */
+    padding: 8px 0;
+    border-bottom: 1px dashed #e5e7eb; /* Dashed separator */
+}
+
+.detail-row:last-child {
+    border-bottom: none; /* No border for the last row */
+}
+
+/* Styling for labels in detail rows */
+.detail-row .label {
+    font-weight: 600;
+    color: #374151; /* Slightly darker gray for labels */
+    flex-shrink: 0; /* Prevent label from shrinking */
+    margin-right: 10px; /* Space between label and value */
+}
+
+/* Styling for messages (loading, error) */
+#loadingMessage, #errorMessage {
+    text-align: center;
+    padding: 20px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-radius: 8px;
+    margin-top: 20px;
+    display: none; /* Hidden by default */
+}
+
+#loadingMessage {
+    background-color: #e0f2fe; /* Light blue */
+    color: #0284c7; /* Darker blue */
+}
+
+#errorMessage {
+    background-color: #fee2e2; /* Light red */
+    color: #dc2626; /* Darker red */
+}
