@@ -74,7 +74,7 @@ img {
 }
 
 
-.text-8 {
+.text-8 { 
   flex-grow: 0;
   flex-shrink: 1;
   flex-basis: auto;
@@ -162,4 +162,111 @@ img {
   color: black;
   text-align: center;
   padding-top: 20px;
+}
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f3f4f6;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1f2937;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#produitList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.produit-card {
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.produit-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.produit-card h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 15px;
+    text-align: center;
+    word-break: break-word;
+}
+
+.produit-details {
+    margin-top: 10px;
+    font-size: 0.95rem;
+    color: #4b5563;
+}
+
+.detail-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px dashed #e5e7eb;
+}
+
+.detail-row:last-child {
+    border-bottom: none;
+}
+
+.detail-row .label {
+    font-weight: 600;
+    color: #374151;
+    flex-shrink: 0;
+    margin-right: 10px;
+}
+
+#loadingMessage, #errorMessage {
+    text-align: center;
+    padding: 20px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-radius: 8px;
+    margin-top: 20px;
+    display: none;
+}
+
+#loadingMessage {
+    background-color: #e0f2fe;
+    color: #0284c7;
+}
+
+#errorMessage {
+    background-color: #fee2e2;
+    color: #dc2626;
 }
