@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="shoeshopper" id="64C003FB-CEF4-CDB8-A7EF-1B4B24939668" version="3.5">
+<createdBy>ngngs</createdBy>
+<createdTime>2025-05-07 21:26:31 UTC</createdTime>
+<ownerDesignName>TP2</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>64C003FB-CEF4-CDB8-A7EF-1B4B24939668</designId>
+</OSDM_Design>
